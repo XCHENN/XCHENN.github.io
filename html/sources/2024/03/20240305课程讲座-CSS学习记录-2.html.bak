@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="lofi" class="bg-slate-50 fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta property="og:site_name" content="陈熙">
+
+    <meta name="author" content="陈熙">
+    <meta name="publisher" content="陈熙">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token">
+
+
+    <link rel="alternate" type="application/rss+xml" title="陈熙" href="javavoid:(0)">
+ 
+	<!--[if LT IE 7]>
+    <link rel="stylesheet" href="css/ie6.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.min.css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie6.css">
+    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+	<!-- media queries css -->
+    <link rel="stylesheet" href="css/media-queries.css" type="text/css"/>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/default.css" type="text/css"/>
+    
+
+    <style type="text/css">
+		ul {
+			list-style-type: none; /* 去除默认样式 */
+		}
+		ul li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+		a {
+			text-decoration: none;
+		}
+		a:hove {
+			text-decoration: none;
+		}
+		.container {
+			display: flex; /* 设置为flex容器 */
+		}
+ 
+		.left-side {
+			width: 75%; /* 左侧固定宽度 */
+			margin-right:5px;
+		}
+ 
+		.right-side {
+			flex: 1; /* 右侧自适应宽度 */
+			background-color: #f5f5f5;
+		}
+		.divider:not(:empty) {
+			gap: 1rem;
+		}
+		.divider {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			align-self: stretch;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			height: 1rem;
+			white-space: nowrap;
+		}
+		.divider:after, .divider:before {
+			height: 0.125rem;
+			width: 100%;
+			flex-grow: 1;
+			--tw-content: "";
+			content: var(--tw-content);
+			background-color: var(--fallback-bc,oklch(var(--bc)/.1));
+		}
+		.line {
+			position: relative; /* 设置相对定位 */
+			/*display: inline-block;  将元素转换成行内块元素 */
+		}
+    
+		.line::before,
+		.line::after {
+			content: ""; /* 必需的空内容 */
+			position: absolute; /* 设置绝对定位 */
+			top: 50%; /* 居中显示 */
+			border-bottom: 2px solid rgb(229, 231, 235); /* 设置分隔线样式 */
+			width: 30%; /* 调整分隔线长度 */
+		}
+    
+		.line::before {
+			left:5%; /* 调整左侧分隔线距离 */
+		}
+    
+		.line::after {
+			right: 5%; /* 调整右侧分隔线距离 */
+		}
+		.latest-articles li a {
+			color:#000;
+		}
+		a:hover {
+			text-decoration:none;
+			color:red !important;
+		}
+    </style>
+    <meta name="description" content="陈熙，博士/教授，为本科生/研究生开设多元统计/模式识别/人工智能10来年，业余进行网站开发。喜欢旅游和素食">
+    <meta name="keywords" content="陈熙, 博士/教授，网站开发，模式识别，数据分析，网络安全，素食">
+    <meta property="og:description" content="陈熙，博士/教授，为本科生/研究生开设多元统计/模式识别/人工智能10来年，业余进行网站开发。喜欢旅游和素食">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <title>陈熙 贵州师范大学</title>
+    <link rel="canonical" href="">
+    <meta property="og:title" content="陈熙">
+    <meta property="og:url" content="">
+    <meta name="url" content="">
+    <meta name="csrf-token" content="oDCos68AvyMTHamniXEDDiQI7fzE6RVQS1Mzq7VqB3un_R4wjuA7P1av2wWCWkGgFO6gMGHIBQ5vs2d7I3MqHw">
+</head>
+
+<body class="" style="width:80%;margin-left:auto;margin-right:auto;">
+    <nav class="container" style="height:76px;line-height:32px;background-color:rgb(255, 255, 255);position:relative;box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;padding-left:0px; padding-right:0px;">
+        <div class="" style="width:70%;position:absolute; left:20px;margin-top:12px;">
+            <div class="" style="font-family:ui-sans-serif, system-ui, san;font-size:24px;color:rgb(0 0 0);">
+                <span style="color:#000;">陈熙 贵州师范大学</span>
+                <!--<span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-star"></span>-->
+            </div>
+            <div class="" style="font-size:14px; line-height:20px;color:rgb(100, 116, 139);">
+                博士/教授/网站开发/模式识别/数据分析/网络安全/素食
+            </div>
+        </div>
+		<ul class="nav-tabs" style="width:25%;min-width:300px;position:absolute; right:10px;border: none; line-height:76px; font-family:ui-sans-serif, system-ui, san;font-size:20px;color:rgb(0 0 0);">
+            <li class=""><span class="nav-link">记笔记是一种好习惯</span></li>
+        </ul>
+    </nav>
+
+    <section class="container" style="overflow:hidden;margin-left:auto;margin-right:auto;background-color:#f4f4f4;padding-left:0px; padding-right:0px;">
+		<div class="left-side tab-content" style="float:left;left:0; margin-top:12px; margin-left:auto; margin-right:auto;">
+		  <div id="articles" class="tab-pane active" style="background-color: #f4f4f4;" >
+            <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                <header>
+                    <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+						<span href="" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">CSS学习笔记-2 CSS选择器</span>
+					</h2>
+                </header>
+				<p style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">以前的学习笔记，应该有很多不准确甚至错误之处，请自行分辨</p>
+                <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                    2024.02.29
+                </time>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">元素选择器</div>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">(1)HTML文档中的元素，如html元素，html {color: black;}</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(2)冒号和分号后面可以有0个或多个空格。选择器与声明块之间有无空格均可。有一个或多个空格均可</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(3)CSS关键字一般由空格分隔，在CSS的font属性中，有一种情况可以使用斜线(/)来分隔两个特定关键字：h2 {font: large/150% sans-serif;}。<p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(4)选择器分组：h2,p {color: gray;}</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(5)通配选择器：*{color: red;}</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(6)声明分组：h1 {font: 18px Helvetica; color:purple; background:aqua;}</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(7)结合选择器和声明的分组：h1,h2,h3 { color:gray; background:white; padding:0.5em; border:1px solid black; font-family: Charcoal, sans-serif;}</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">类选择器和ID选择器</div>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(1)p.warning {font-weight: bold;},选择器会匹配class属性包含warning的所有p元素。“.”号与p和warning之间无空格</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">(2)多类选择器，.warning.urgent {background:silver;}; 第2个“.”号与warning之间无空格，此多类选择器匹配class属性中包含warning和urgent词的那些元素，但是class属性可以包含除warning和urgent外的其他词。</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(3)不同于类选择器(&lt;p class=”urgent warning help”&gt;Help me!&lt;/p&gt;)，ID选择器不能结合使用，因为ID属性不允许有以空格分隔的词列表。点号加类名的记法不一定能在xml中使用。#号加ID的记法可以在任何文档语言中使用。HTML和XHTML将类和ID值定义为区分大小写。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">属性选择器</div>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">(1)h1[class] {color:silver}，元素中有class属性即可，不论class属性的值为多少</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">(2)根据多个属性进行选择：a[href][title] {font-weight:bold;}</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(3)根据具体属性值选择，如： a[href=”http:www.w3.org/”][title=”W3C Home”]，此格式需要完全匹配</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(4)h1#page-title和h1[id=”page-title”]之间的区别是“特殊性”不同。可参加《CSS权威指南》p47页。</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(5)根据部分属性进行选择: p[class～=”warning”] {font-weight:bold;}，即根据属性值中出现的一个用空格分隔的词来完成选择，即元素class属性中含有一个warning属性值（部分选择）</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(6)子串匹配属性选择：[foo^=”bar”](选择foo属性值以“bar”开头的所有元素)；[foo$=”bar”](选择foo属性以”bar”结尾的所有元素; [foo*=”bar”](选择foo属性值中包含子串“bar”的所有元素)；符号“^=”与前后两端有无空格均可。其他两种符号也是</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(7)特定属性选择器： *[lang|=”en”]{color:white;},这个规则会选择lang属性等于en或以en-开头的（以en为前缀，即en后跟一个连字符’-‘）所有元素。符号“|=”与前后两端有无空格均可</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">后代选择器</div>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">(1)h1 em {color:gray;} ， td.sidebar a:link{color:white;}</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">选择子元素</div>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <code>
+						&lt;html&gt;
+							&lt;head&gt;
+							&lt;/head&gt;
+							&lt;body&gt;
+								&lt;p&gt;It’s is a &lt;span&gt;very interesting dog&lt;/span&gt;, it looks like &lt;a&gt; a cat&lt;/a&gt;&lt;span&gt;, foremore a fat cat!&lt;/span&gt;
+							&lt;/body&gt;
+						&lt;/html&gt;
+					</code>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">(1)p>a选择p元素子元素的所有a元素，其中符号“>”是选择子元素操作符，两边可以有空白符。子元素选择只匹配与p元素直接相连的所有元素。而后代匹配，如p a表示选择p元素所有后代元素中的a元素</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">选择相邻兄弟元素</div>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">(1)相邻兄弟结合符还可以结合其他结合符，如html > body table + ul{margin-top:1.5em;}，解释为：“选择紧邻在一个table元素后出现的所有兄弟ul元素（table和ul具有一个共同的父元素），该table元素包含在一个body元素中，body元素本身是html元素的子元素”。兄弟元素指具有共同父元素，用一个结合符只能选择两个相邻兄弟中的第二个元素</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">伪类</div>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">(1)链接伪类。:link指示作为超链接（有一个href属性）并指向一个未访问地址的所有锚。:visited 指示已访问地址超链接的所有锚，a.external:link, a.external:visited {color:maroon;}链接伪类的顺序很重要，几个伪类同时作用时，元素产生的效果</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(2)动态伪类。:hover指示鼠标指针停留在哪个元素上。:active 指示被用户输入激活的元素，如用户点击超链接。:focus 指示元素获得焦点。动态伪类可以应用到任何元素</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(3)选择第一个子元素。p:first-child {font-weight:bold;} （先找出给出html代码的所有第一个子元素，然后给找出来的子元素中的p元素设置样式）
+li:first-child {text-transform:uppercase;}。在文档《first-of-type和first-child》中的解释为：first-child选择器先会去找它的父元素, 然后看带有first-child属性的元素是不是父元素的第一个子元素, 是的话就加上对应的样式.前一个规则将作为某元素第一个子元素的所有P元素设置为粗体（每一个元素都肯能包含多个第1个元素，如第1个p，第1个li）。第二个规则将作为某个元素第一个子元素的所有li元素变成大写。最常见的错误是认为：p:first-child之类的选择器会选择p元素的第一个子元素。</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(4)根据语言选择, *:lang(fr) {font-style:italic;}</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(5)结合伪类, a:visited:hover {color:maroon;}, a:visited:hover:lang(de) {color:silver;}。结合伪类中，伪类的顺序不重要</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">伪元素选择器</div>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">(1):first-letter设置首字母样式用于设置一个块级元素首字母的样式，且仅对该首字母设置样式，在CSS2.1中，:first-letter能应用到所有元素。p:first-letter {color:red;}，p:first-letter是伪元素，不必增加任何新标记，这会由用户代理完成</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(2):first-line设置第1行样式，只能应用于块级元素，而不能应用于行内元素，所有伪元素都必须放在出现该伪元素的选择器的最后面</p>
+					<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+						<img class="" alt="CSS笔记" src="../../../../images/CSS笔记/02-01.png" style="width:100%; height:auto;">
+					</figure>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(3)设置之前和之后元素的样式:h2:before {content: "}}"; color:red;}, body:after {content:"The End.";}</p>
+					<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+						<img class="" alt="CSS笔记" src="../../../../images/CSS笔记/02-02.png" style="width:100%; height:auto;">
+					</figure>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">(4)伪选择器first-of-type和first-child</p>
+					<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+						<img class="" alt="CSS笔记" src="../../../../images/CSS笔记/02-03.png" style="width:100%; height:auto;">
+					</figure>
+					<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+						<img class="" alt="CSS笔记" src="../../../../images/CSS笔记/02-04.png" style="width:100%; height:auto;">
+					</figure>
+                </div>
+				
+            </article>
+          </div>
+		</div>
+    </section>
+
+    <footer class="container" style="margin:16px 0 16px 0;margin-left:auto; margin-right:auto;">
+        <div class="" style="line-height:48px;height:48px; font-family:ui-sans-serif, system-ui, san;width:100%;font-size:15px;">
+            <!--<p style="text-align: center;">Copyright © 20024/01/01 陈熙制作</p>-->
+			<p style="text-align: center;">20024/01/01 陈熙制作</p>
+        </div>       
+    </footer>
+
+    <div id="flash-message">
+
+    </div>
+
+    <!--<script async="async" src="./images/script.js" data-website-id="9915f3fe-4850-4bfe-89dd-9776f6f14206"></script>-->
+	<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+</body>
+</html>

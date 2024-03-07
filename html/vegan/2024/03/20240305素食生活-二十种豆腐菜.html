@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="lofi" class="bg-slate-50 fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta property="og:site_name" content="陈熙">
+
+    <meta name="author" content="陈熙">
+    <meta name="publisher" content="陈熙">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token">
+
+
+    <link rel="alternate" type="application/rss+xml" title="陈熙" href="javavoid:(0)">
+ 
+	<!--[if LT IE 7]>
+    <link rel="stylesheet" href="css/ie6.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.min.css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie6.css">
+    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+	<!-- media queries css -->
+    <link rel="stylesheet" href="css/media-queries.css" type="text/css"/>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/default.css" type="text/css"/>
+    
+
+    <style type="text/css">
+		ul {
+			list-style-type: none; /* 去除默认样式 */
+		}
+		ul li {
+			display: inline-block;
+			margin-right: 10px;
+		}
+		a {
+			text-decoration: none;
+		}
+		a:hove {
+			text-decoration: none;
+		}
+		.container {
+			display: flex; /* 设置为flex容器 */
+		}
+ 
+		.left-side {
+			width: 75%; /* 左侧固定宽度 */
+			margin-right:5px;
+		}
+ 
+		.right-side {
+			flex: 1; /* 右侧自适应宽度 */
+			background-color: #f5f5f5;
+		}
+		.divider:not(:empty) {
+			gap: 1rem;
+		}
+		.divider {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			align-self: stretch;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			height: 1rem;
+			white-space: nowrap;
+		}
+		.divider:after, .divider:before {
+			height: 0.125rem;
+			width: 100%;
+			flex-grow: 1;
+			--tw-content: "";
+			content: var(--tw-content);
+			background-color: var(--fallback-bc,oklch(var(--bc)/.1));
+		}
+		.line {
+			position: relative; /* 设置相对定位 */
+			/*display: inline-block;  将元素转换成行内块元素 */
+		}
+    
+		.line::before,
+		.line::after {
+			content: ""; /* 必需的空内容 */
+			position: absolute; /* 设置绝对定位 */
+			top: 50%; /* 居中显示 */
+			border-bottom: 2px solid rgb(229, 231, 235); /* 设置分隔线样式 */
+			width: 30%; /* 调整分隔线长度 */
+		}
+    
+		.line::before {
+			left:5%; /* 调整左侧分隔线距离 */
+		}
+    
+		.line::after {
+			right: 5%; /* 调整右侧分隔线距离 */
+		}
+		.latest-articles li a {
+			color:#000;
+		}
+		a:hover {
+			text-decoration:none;
+			color:red !important;
+		}
+    </style>
+    <meta name="description" content="陈熙，博士/教授，为本科生/研究生开设多元统计/模式识别/人工智能10来年，业余进行网站开发。喜欢旅游和素食">
+    <meta name="keywords" content="陈熙, 博士/教授，网站开发，模式识别，数据分析，网络安全，素食">
+    <meta property="og:description" content="陈熙，博士/教授，为本科生/研究生开设多元统计/模式识别/人工智能10来年，业余进行网站开发。喜欢旅游和素食">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <title>陈熙 贵州师范大学</title>
+    <link rel="canonical" href="">
+    <meta property="og:title" content="陈熙">
+    <meta property="og:url" content="">
+    <meta name="url" content="">
+    <meta name="csrf-token" content="oDCos68AvyMTHamniXEDDiQI7fzE6RVQS1Mzq7VqB3un_R4wjuA7P1av2wWCWkGgFO6gMGHIBQ5vs2d7I3MqHw">
+</head>
+
+<body class="" style="width:80%;margin-left:auto;margin-right:auto;">
+    <nav class="container" style="height:76px;line-height:32px;background-color:rgb(255, 255, 255);position:relative;box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;padding-left:0px; padding-right:0px;">
+        <div class="" style="width:70%;position:absolute; left:20px;margin-top:12px;">
+            <div class="" style="font-family:ui-sans-serif, system-ui, san;font-size:24px;color:rgb(0 0 0);">
+                <span style="color:#000;">陈熙 贵州师范大学</span>
+                <!--<span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-star"></span>-->
+            </div>
+            <div class="" style="font-size:14px; line-height:20px;color:rgb(100, 116, 139);">
+                博士/教授/网站开发/模式识别/数据分析/网络安全/素食
+            </div>
+        </div>
+		<ul class="nav-tabs" style="width:25%;min-width:300px;position:absolute; right:10px;border: none; line-height:76px; font-family:ui-sans-serif, system-ui, san;font-size:20px;color:rgb(0 0 0);">
+            <li class=""><span class="nav-link">素食，好吃又好看</span></li>
+        </ul>
+    </nav>
+
+    <section class="container" style="overflow:hidden;margin-left:auto;margin-right:auto;background-color:#f4f4f4;padding-left:0px; padding-right:0px;">
+		<div class="left-side tab-content" style="float:left;left:0; margin-top:12px; margin-left:auto; margin-right:auto;">
+		  <div id="articles" class="tab-pane active" style="background-color: #f4f4f4;" >
+            <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                <header>
+                    <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+						<span href="" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">二十种豆腐菜</span>
+					</h2>
+                </header>
+				<p style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">部分内容来自网络，如有侵权，请联系作者删除</p>
+                <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                    2024.02.29
+                </time>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">番茄豆腐</div>
+                <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="番茄豆腐" src="../../../../images/二十种豆腐菜/番茄豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐2块、番茄1个；亨氏番茄酱1大勺、酱油少许、蘑菇精少许、盐适量、细砂糖1小勺、香油数滴。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">准备所需材料；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">将豆腐切成小块，番功切成与豆腐大小相同的块；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">锅内放清水烧沸，加入1小勺盐，再加入豆腐，待煮沸时捞起；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">锅内放油烧热，然后倒入2/3的番茄块。将番茄块炒软；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">倒入豆腐块，小心翻炒；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">然后加入温水，温水没过豆腐即可，大火煮开后转小火炖煮；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">炖至汤汁收浓，再放入剩余的番茄块和番茄酱；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">再加入盐、加入酱油、白糖、蘑菇精小心炒匀；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">最后滴上香油即可出锅。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">干煎辣豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="干煎辣豆腐" src="../../../../images/二十种豆腐菜/干煎辣豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                   <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">北豆腐1盒、鲜香菇4朵、胡萝卜1根、尖椒1根；橄榄油4汤匙（60ml）、豆豉辣酱2汤匙（30克）。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">将北豆腐切成2cm大小见方的块儿，胡萝卜去皮切片，尖椒去蒂去籽切成三角块。香菇洗净后切成小块；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">锅中倒入橄榄油，大火加热待油7成热时，放入豆腐块，改成中小火煎炸成几面金黄色捞出；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">加热锅中的底油，待7成热时放入胡萝卜片，香菇块充分炒透后，放入豆腐块和豆豉辣酱，不要加水用中小火继续煸炒1分钟左右；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">最后，加入尖椒块翻炒30秒钟后即可出锅。如果咸度不够，可以适当的加一点点盐。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">五彩豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="五彩豆腐" src="../../../../images/二十种豆腐菜/五彩豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">韧豆腐、甜玉米、甜豌豆、干香菇、胡萝卜；油、盐、生抽、淀粉、香油。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">干香菇用冷水泡发；胡萝卜去皮切丁；甜玉米和甜豌豆解冻；韧豆腐切成小块；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">炒锅烧热放油，先加入胡萝卜和香菇略炒，再加入甜玉米和甜豌豆翻炒均匀。然后注入开水，放入豆腐块，水量以没过豆腐为宜，加入适量生抽、盐调味；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">盖上锅盖，炖煮10分钟，最后用水淀粉勾芡，淋几滴香油即可出锅。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">可乐豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="可乐豆腐" src="../../../../images/二十种豆腐菜/可乐豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐、可乐；姜、小红椒、生抽、盐、花椒面。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐切成2cm左右的方块；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">姜切末，红椒切小段；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐上撒上花椒面、盐腌渍一会；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">锅烧热，锅内放入少许油将豆腐块煎炸成每面都金黄色；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">捞出豆腐留少许油，煸香姜末然后将煎好的豆腐块放入加入可乐，生抽、中火烧透；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">开锅放入红椒圈，放盐进行调味，盐不宜放太多，因为刚才腌制豆腐的时候已放过一次盐，小火收汁即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">菇鲜豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="菇鲜豆腐" src="../../../../images/二十种豆腐菜/菇鲜豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐1块、香菇3朵、胡萝卜1/4根；盐少许、素蚝油适量、素高汤适量、水淀粉适量、西班牙橄榄油1汤匙（15ml）。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐切块，大小依个人喜好即可，一般2cm左右的方块；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">香菇、胡萝卜切丁；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">锅中倒放少许西班牙橄榄油；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">油热后放入香菇、胡萝卜翻炒2-3分钟；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">倒入高汤煮沸，放入豆腐块；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">煮约5分钟，加盐、素蚝油调味；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">最后加水淀粉勾芡即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">菠萝咕老豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="菠萝咕老豆腐" src="../../../../images/二十种豆腐菜/菠萝咕老豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">老豆腐1块、菠萝半个；番茄沙司5汤匙（约75g）、水淀粉 2汤匙、姜、盐1/4茶匙、糖1茶匙。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">老豆腐洗净，菠萝切去当中硬芯，切片用淡盐水浸泡十分钟沥干水分；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">老豆腐用厨房纸吸干表面水分，切成小块。菠萝切小块；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">锅烧热后放油烧热，放入姜片小火煸出香味，捞出扔掉；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">老豆腐块倒入锅中，用中小火慢慢煎到表面金黄捞出备用；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">用锅中余油，中火煸炒番茄沙司半分钟；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">倒入小半碗清水煮开；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">倒入步骤四煎好的豆腐，加盐和糖，一起翻炒两分钟，让豆腐入味；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">倒入菠萝块，翻炒一会儿；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">最后倒入两汤匙左右的薄薄的水淀粉，翻炒均匀收至汤汁浓稠包裹在豆腐和菠萝表面即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">素肉末虎皮豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="素肉末虎皮豆腐" src="../../../../images/二十种豆腐菜/素肉末虎皮豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">北豆腐、素肉末、木耳、香菜；豆瓣酱、酱油、醋、白糖、盐。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">将豆腐切片（厚薄半公分），木耳剁碎，把适量豆瓣酱、少许酱油、醋还有白糖调入一个容器中，搅拌均匀备用；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">将切好的豆腐均匀的裹上生粉；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">起油锅，油温7成热时放入裹好生粉的豆腐片，煎至两面金黄盛出备用；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">另起油锅，放入素肉末翻炒；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">放入调好的酱汁炒熟,紧接着放入木耳碎同炒；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">放入煎好的豆腐片翻炒片刻撒入少许盐或者不加盐（豆瓣酱本身有咸味）撒入香菜即可出锅。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">鸡刨豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="鸡刨豆腐" src="../../../../images/二十种豆腐菜/鸡刨豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">老豆腐200克；花椒粉少许、辣椒粉少许、姜末少许、酱油少许、盐适量、植物油2汤勺。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">选一个大的容器，将老豆腐放入，将勺或者直接上手将其弄碎；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">炒锅烧热，加入2勺的植物油，爆香姜末加入豆腐翻炒2-3分钟，点数滴酱油调味，加入少许辣椒粉与花椒粉翻炒匀均，出锅前撒少许葱花拌匀，根据口味调入盐巴即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">时蔬豆腐汤</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="时蔬豆腐汤" src="../../../../images/二十种豆腐菜/时蔬豆腐汤.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">南豆腐半块、鸡毛菜50克（或者时令小青菜）；香油少许、白胡椒粉少许（选用）。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">时令的小青菜洗净，豆腐改刀为小块备用。锅中加入700ML左右的水；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">水未开的时候，加入切好的豆腐，然后转中小火；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">这个时候不能盖盖，因为豆腐加热一焖就不好吃了。加热3分钟左右，待汤再次要沸腾的时候尝一下豆腐，只要全热烫嘴的就好。然后加入小青菜拌匀，中小火加热3分钟淋香油（白胡椒粉）即可出锅。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">宫爆豆腐丁</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="宫爆豆腐丁" src="../../../../images/二十种豆腐菜/宫爆豆腐丁.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">北豆腐大半块、胡萝卜1/3根、莴笋1小段；花生仁30克、姜适量、干辣椒6根、花椒8粒、生抽1大匙、醋1大匙、白糖1/2大匙、蘑菇精1小匙、香油1/2小匙、水淀粉1大匙。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">胡萝卜和莴笋洗净去皮，切成小块；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">一点点油小火炸熟花生仁，晾一边备用；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐切小块，入油锅中大火炸至发黄，盛出备用；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">姜切末，干辣椒切段儿；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">“调料”中的所有材料混合调成“调味汁”；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">锅入油，放入花椒、姜、和胡萝卜，中小火将胡萝卜炒至变色；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">放入干辣椒翻炒片刻，然后倒入莴笋，中大火翻炒；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">倒入炸好的豆腐丁，炒匀；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">倒入调好的“调味汁”，翻炒均匀，最后加适量盐。起锅前放入花生仁炒匀即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">香辣嫩豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="香辣嫩豆腐" src="../../../../images/二十种豆腐菜/香辣嫩豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">嫩豆腐；花生、香菜、盐、糖、生抽、香醋、香油和辣椒油各少许。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">嫩豆腐切方块；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">入加了盐的热水中焯一下，去除豆腥，捞出沥干水分；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">花生入锅小火炒熟，至噼里啪啦响过之后关火，凉透；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">炒好的花生去皮，擀碎；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">香菜切段备用；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">用盐、糖、生抽、香醋、香油和辣椒油兑成碗汁；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">碗汁浇在豆腐上；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">撒上花生碎和香菜段，吃时拌匀即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">双椒蒸豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="双椒蒸豆腐" src="../../../../images/二十种豆腐菜/双椒蒸豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">水豆腐一块；双色剁椒各1大匙、酱油一大匙、油1大匙。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">水豆腐倒入盘中，并切片，用手轻轻拨开成斜状；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">剁椒分别倒在豆腐上，浇上酱油，用保鲜膜将豆腐盘包好。不要漏气；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">蒸锅加水大火烧开后，放入豆腐盘，盖盖蒸10分钟；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">关火后，将豆腐盘拿出，去掉保鲜膜，烧中热油后泼上即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">烩什锦豆腐丸子</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="烩什锦豆腐丸子" src="../../../../images/二十种豆腐菜/烩什锦豆腐丸子.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐（北豆腐）、香菇、荸荠、黄瓜、胡萝卜、口蘑；盐、胡椒粉、酱油、香油、水淀粉。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐取一小块就可以了，豆腐捣成泥状后量会显得很多，这样的一盘豆腐丸子我只用了三分之一块豆腐，将豆腐洗净后在沸水中焯一下取出；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">黄瓜、胡萝卜洗净后切菱形片，口蘑洗净切片，荸荠洗净去皮切末，香菇洗净切末；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">将焯好的豆腐控干水分后捣成泥状，建议用手操作，这样很快就能将豆腐泥做好，而且豆腐泥比较细腻，不会有太大的颗粒存在；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">将捣好的豆腐泥用纱布包起来，拧干水分，然后与香菇末，荸荠末搅拌在一起，加盐和胡椒粉调味；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">捏成大小适中的丸子，放入蒸锅蒸10分钟左右即可。这个步骤也可以选择用油来炸（豆腐泥控干水分后，加盐要适度，加的太多会感觉到苦）；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">取来炒锅，加入适量清水，烧开，放入黄瓜片、胡萝卜片和口蘑片，加适量盐、酱油和胡椒粉调味；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">炖至汤汁收浓，再放入剩余的番茄块和番茄酱；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">最后用水淀粉勾芡，这时可以将蒸好的豆腐丸子下入锅中裹匀芡汁，如果你担心这样做丸子会散掉，就直接把芡汁浇到豆腐丸子上即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">香煎黑芝豆腐饼</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="香煎黑芝豆腐饼" src="../../../../images/二十种豆腐菜/香煎黑芝豆腐饼.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">面粉50克、卤水豆腐100克、素肉末20克、白萝卜20克；盐、麻油少许、糖少许、黑芝麻10克。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">将素肉末先用调味料先略腌一下；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">白萝卜切末，豆腐捏碎；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">将步骤1、2与面粉拌匀、黑芝麻做成小饼状；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">平底锅末油，倒入饼用小火烙烤至表面凝固，煎至两面金黄即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">糯米豆腐丸子</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="糯米豆腐丸子" src="../../../../images/二十种豆腐菜/糯米豆腐丸子.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">板豆腐一块，长糯米适量；胡椒粉，姜末，香油1茶匙、盐适量。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">长糯米泡水2小时沥干水份备用；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐在开水中氽烫一下，压成泥；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">把姜末、盐放入豆腐搅拌均匀；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">把搅拌好的豆腐泥在步骤1中的糯米里滚一滚；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">上笼屉蒸15分钟即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">烤豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+					<img class=" " alt="烤豆腐" src="../../../../images/二十种豆腐菜/烤豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐1盒；胡椒粉，一勺辣椒粉，半勺盐。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐切块，均匀摆上铺好锡纸的烤盘；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">香料撒上豆腐，刷上适量酱油和食用油，豆腐翻面，进行同样的操作；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">放入蒸烤箱，使用后部热风功能180度烤20分钟即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">睦谷藜麦烧豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="睦谷藜麦烧豆腐" src="../../../../images/二十种豆腐菜/睦谷藜麦烧豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐、藜麦、青红椒；酱油、姜、盐适量。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">藜麦按照煮干饭的方法先煮熟，盛出备用；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">青红椒、姜切片、豆腐切块用盐水腌大概20分钟备用；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">热锅热油，爆香姜；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">煎豆腐直至豆腐两面呈金黄，放盐、酱油；快出锅时放入青红椒；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">加入藜麦。盛出豆腐，将藜麦淋在上面。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">椒盐豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="椒盐豆腐" src="../../../../images/二十种豆腐菜/椒盐豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐250克、红辣椒1个、青辣椒1个、香葱1棵；大蒜6瓣、食用油250克、黑胡椒粉小匙、花椒盐小匙、精盐1小匙、味精小匙。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐洗净后切成小方块，青、红椒去蒂和籽，切成环状，香葱切末，大蒜切片；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">锅内倒入油，烧至八成热时，将豆腐块入锅，至金黄色后捞出沥干油；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">锅内留少许油，大火爆香香葱末、大蒜片，再放入辣椒圈、精盐、味精、黑胡椒粉、花椒盐搅匀即可盛出；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">将所有调料与炸豆腐拌匀即可；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">倒入豆腐块，小心翻炒；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">然后加入温水，温水没过豆腐即可，大火煮开后转小火炖煮；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">炖至汤汁收浓，再放入剩余的番茄块和番茄酱；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">再加入盐、加入酱油、白糖、蘑菇精小心炒匀；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">最后滴上香油即可出锅。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">豆腐杂菌汤</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="豆腐杂菌汤" src="../../../../images/二十种豆腐菜/豆腐杂菌汤.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">捞菌汤火锅汤料、韧豆腐1块约350克；香菇3朵、平菇100克、蟹味菇100克（或者其他品种蘑菇）。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐切成小块、平菇撕成小块、蟹味菇去根洗净、香菇用水泡发切成；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">锅中放入2000克水，加入菌汤底料烧开后再熬制10分钟；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">放入豆腐以及蘑菇煮熟即可。</p>
+                </div>
+				<div class="" style="line-height:16px;margin:16px auto;height:16px;font-size:24px;text-align:center;">素麻婆豆腐</div>
+				<figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px;">
+					<img class=" " alt="素麻婆豆腐" src="../../../../images/二十种豆腐菜/素麻婆豆腐.jpg" style="width:100%; height:auto;">
+				</figure>
+                <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                    <p style="font-size:24px;font-weight:500;line-height:32.5px;">材料</p>
+                    <p style="font-size:20px;font-weight:300;line-height:32.5px;">嫩豆腐1盒；生姜、蒜头、香葱、泡脚、郫县豆瓣酱、白糖、生粉各少许。</p>
+					<p style="font-size:24px;font-weight:500;line-height:32.5px;">步骤</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐切小块，中火煎至两面微黄盛出备用；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">生姜大蒜切末，用煎豆腐的余油炒香；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">放入泡椒，豆瓣酱炒香出红油；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">倒入适量开水，调入一勺生抽，适量胡椒粉，一小勺白糖；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">倒入煎好的豆腐煮四分钟，勾入芡汁，鸡精关火；</p>
+					<p style="font-size:20px;font-weight:300;line-height:32.5px;">起锅撒上葱花即可。</p>
+                </div>
+            </article>
+          </div>
+		</div>
+    </section>
+
+    <footer class="container" style="margin:16px 0 16px 0;margin-left:auto; margin-right:auto;">
+        <div class="" style="line-height:48px;height:48px; font-family:ui-sans-serif, system-ui, san;width:100%;font-size:15px;">
+            <!--<p style="text-align: center;">Copyright © 20024/01/01 陈熙制作</p>-->
+			<p style="text-align: center;">20024/01/01 陈熙制作</p>
+        </div>       
+    </footer>
+
+    <div id="flash-message">
+
+    </div>
+
+    <!--<script async="async" src="./images/script.js" data-website-id="9915f3fe-4850-4bfe-89dd-9776f6f14206"></script>-->
+	<script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+</body>
+</html>
