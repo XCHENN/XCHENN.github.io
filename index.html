@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" data-theme="lofi" class=" ">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta property="og:site_name" content="陈熙">
+
+    <meta name="author" content="陈熙">
+    <meta name="publisher" content="陈熙">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token">
+
+
+    <link rel="alternate" type="application/rss+xml" title="陈熙" href="javavoid:(0)">
+
+    <!--[if LT IE 7]>
+    <link rel="stylesheet" href="css/ie6.css" type="text/css"/>
+    <![endif]-->
+    <!--[if lte IE 6]>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-ie6.min.css">
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie6.css">
+    <![endif]-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <!-- media queries css -->
+    <link rel="stylesheet" href="css/media-queries.css" type="text/css" />
+    <!-- main css -->
+    <link rel="stylesheet" href="css/default.css" type="text/css" />
+
+
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+            /* 去除默认样式 */
+        }
+
+        ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hove {
+            text-decoration: none;
+        }
+
+        .container {
+            display: flex;
+            /* 设置为flex容器 */
+        }
+
+        .left-side {
+            width: 75%;
+            /* 左侧固定宽度 */
+            margin-right: 5px;
+        }
+
+        .right-side {
+            flex: 1;
+            /* 右侧自适应宽度 */
+            background-color: #f5f5f5;
+        }
+
+        .divider:not(:empty) {
+            gap: 1rem;
+        }
+
+        .divider {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-self: stretch;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            height: 1rem;
+            white-space: nowrap;
+        }
+
+        .divider:after,
+        .divider:before {
+            height: 0.125rem;
+            width: 100%;
+            flex-grow: 1;
+            --tw-content: "";
+            content: var(--tw-content);
+            background-color: var(--fallback-bc, oklch(var(--bc)/.1));
+        }
+
+        .line {
+            position: relative;
+            /* 设置相对定位 */
+            /*display: inline-block;  将元素转换成行内块元素 */
+        }
+
+        .line::before,
+        .line::after {
+            content: "";
+            /* 必需的空内容 */
+            position: absolute;
+            /* 设置绝对定位 */
+            top: 50%;
+            /* 居中显示 */
+            border-bottom: 2px solid rgb(229, 231, 235);
+            /* 设置分隔线样式 */
+            width: 30%;
+            /* 调整分隔线长度 */
+        }
+
+        .line::before {
+            left: 5%;
+            /* 调整左侧分隔线距离 */
+        }
+
+        .line::after {
+            right: 5%;
+            /* 调整右侧分隔线距离 */
+        }
+
+        .latest-articles li a {
+            color: #000;
+        }
+
+        a:hover {
+            text-decoration: none;
+            color: red !important;
+        }
+    </style>
+    <meta name="description" content="陈熙，博士/教授，为本科生/研究生开设多元统计/模式识别/人工智能10来年，业余进行网站开发。喜欢旅游和素食">
+    <meta name="keywords" content="陈熙, 博士/教授，网站开发，模式识别，数据分析，网络安全，素食">
+    <meta property="og:description" content="陈熙，博士/教授，为本科生/研究生开设多元统计/模式识别/人工智能10来年，业余进行网站开发。喜欢旅游和素食">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <title>陈熙 贵州师范大学</title>
+    <link rel="canonical" href="">
+    <meta property="og:title" content="陈熙">
+    <meta property="og:url" content="">
+    <meta name="url" content="">
+    <meta name="csrf-token" content="vs2d7I3MqHw">
+</head>
+
+<body class="" style="width:80%;margin-left:auto;margin-right:auto;">
+    <nav class="container" style="height:76px;line-height:32px;background-color:rgb(255, 255, 255);position:relative;box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;padding-left:0px; padding-right:0px;">
+        <div class="" style="width:70%;position:absolute; left:20px;margin-top:12px;">
+            <div class="" style="font-family:ui-sans-serif, system-ui, san;font-size:24px;color:rgb(0 0 0);">
+                <span style="color:#000;">陈熙 贵州师范大学</span>
+                <!--<span class="glyphicon glyphicon-heart"></span><span class="glyphicon glyphicon-star"></span>-->
+            </div>
+            <div class="" style="font-size:14px; line-height:20px;color:rgb(100, 116, 139);">
+                博士/教授/网站开发/模式识别/统计分析/网络安全/素食
+            </div>
+        </div>
+
+        <ul class="nav-tabs" style="width:25%;min-width:300px;position:absolute; right:10px;border: none; line-height:76px; font-family:ui-sans-serif, system-ui, san;font-size:20px;color:rgb(0 0 0);">
+            <li class="active"><a class="nav-link" href="#aboutme" data-toggle="tab">素食/生活</a></li>
+            <li><a class="nav-link" href="#articles" data-toggle="tab">文章</a></li>
+            <li><a class="nav-link" href="#course" data-toggle="tab">课程/讲座</a></li>
+        </ul>
+    </nav>
+
+    <section class="container" style="overflow:hidden;margin-left:auto;margin-right:auto;background-color:#f4f4f4;padding-left:0px; padding-right:0px;">
+        <div class="left-side tab-content" style="float:left;left:0; margin-top:12px;">
+            <!--<div class="tab-pane active" style="background-color: #fff;">
+                <header>
+                    <h2 style="line-height:60px;margin-top:16px;height: 60px;">
+                        <p href="" style="font-weight:400;color:#000;font-size:30px; text-align:center;margin:0 auto;">素食益寿延年！</p>
+                    </h2>
+                </header>
+                <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;">
+                    <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:0px 0px 8px 0px; padding:12xp;">
+                        <img class=" " alt="大家健康长寿！" src="./images/益寿.PNG" style="width:100%; height:auto;">
+                    </figure>
+                </article>
+            </div>-->
+            <div id="aboutme" class="tab-pane active" style="background-color: #f4f4f4;">
+                <!--<article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                    <header>
+                        <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                            <span style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">素食益寿延年！</span>
+                        </h2>
+                    </header>
+
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                    <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+                        <img class=" " alt="Python 好用的 F 字串！" src="./images/益寿.PNG" style="width:100%; height:auto;">
+                    </figure>
+                </article>-->
+					<article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                        <header>
+                            <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                                <a target="_blank" href="./html/vegan/2024/03/20240305素食生活-二十种豆腐菜.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">二十种豆腐菜</a>
+                            </h2>
+                        </header>
+
+                        <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                            2024.02.29
+                        </time>
+                        <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+                            <img class=" " alt="二十种豆腐菜" src="./images/二十种豆腐菜/双椒蒸豆腐.jpg" style="width:100%; height:auto;">
+                        </figure>
+
+                        <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                            <p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐是一种营养丰富又历史悠久的食材，豆腐内含人体必需的多种微量元素，还含有丰富的优质蛋白，素有“植物肉”之美称。豆腐已成为中国饮食文化不可或缺的一部分</p>
+
+                        </div>
+
+                        <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                            <a class="" target="_blank" href="./html/vegan/2024/03/20240305素食生活-二十种豆腐菜.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                                阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                                </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </footer>
+                    </article>
+                    <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                        <header>
+                            <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                                <a target="_blank" href="./html/vegan/2024/03/20240305-花溪十里河滩-麦翁桥附近.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">贵阳花溪十里河滩风光,麦翁桥附近</a>
+                            </h2>
+                        </header>
+
+                        <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                            2024.02.29
+                        </time>
+                        <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+                            <img class=" " alt="花溪桥" src="./images/花溪十里河滩-麦翁桥附近/花溪桥.jpg" style="width:100%; height:auto;">
+                        </figure>
+
+                        <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                            <p style="font-size:20px;font-weight:300;line-height:32.5px;">花溪十里河滩湿地公园位于贵阳市花溪区花溪大道旁，是集旅游、观光、休闲于一体的多类型湿地公园。公园里有小桥流水、嫩柳垂枝、农田屋舍，也有桃花、樱花、杏花、油菜花等十几种花朵，可谓是鸟语花香、世外桃源之地。</p>
+
+                        </div>
+
+                        <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                            <a class="" target="_blank" href="./html/vegan/2024/03/20240305-花溪十里河滩-麦翁桥附近.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                                阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                                </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </footer>
+                    </article>	
+					<article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height 24px;background-color: #fff;margin-top:15px;">
+                        <header>
+                            <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                                <a target="_blank" href="./html/vegan/2024/03/20240305素食生活-回春水.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">回春水</a>
+                            </h2>
+                        </header>
+
+                        <time datetime="2024-03-05" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                            2024.03.05
+                        </time>
+                        <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+                            <img class=" " alt="回春水" src="./images/回春水/回春水.jpg" style="width:100%; height:auto;">
+                        </figure>
+
+                        <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                            <p style="font-size:20px;font-weight:300;line-height:32.5px;">回春水，是起死回春的生命之水，是自制发酵饮料，其保健功效神奇。回春水是用小麦种子经发芽、发酵，产生许多有益的酵素而成，是最好的发酵饮料，尤其是自己制作，又干净、卫生，没有加防腐剂，是大自然最健康的饮料，再怎么说总比市售的饮料好。</p>
+                        </div>
+
+                        <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                            <a class=" " target="_blank" href="./html/vegan/2024/03/20240305素食生活-回春水.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                                阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                                </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </footer>
+                    </article>
+                    <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height 24px;background-color: #fff;margin-top:15px;">
+                        <header>
+                            <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                                <a target="_blank" href="./html/vegan/2024/03/20240305素食生活-法式素菜.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">法式素菜</a>
+                            </h2>
+                        </header>
+
+                        <time datetime="2024-03-05" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                            2024.03.05
+                        </time>
+                        <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+                            <img class=" " alt="法式素食" src="./images/法式素菜/法式素菜-1.jpg" style="width:100%; height:auto;">
+                        </figure>
+
+                        <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                            <p style="font-size:20px;font-weight:300;line-height:32.5px;">法餐总是充满了浪漫的元素，赋予小日子法兰西玫瑰一般的精致、温柔和一点点小激情。</p>
+
+                        </div>
+
+                        <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                            <a class=" " target="_blank" href="./html/vegan/2024/03/20240305素食生活-法式素菜.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                                阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                                </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </footer>
+                    </article>
+                    <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height 24px;background-color: #fff;margin-top:15px;">
+                        <header>
+                            <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                                <a target="_blank" href="./html/vegan/2024/03/20240305素食生活-素菜饼子.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">素菜饼子</a>
+                            </h2>
+                        </header>
+
+                        <time datetime="2024-03-05" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                            2024.03.05
+                        </time>
+                        <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+                            <img class=" " alt="红豆高粱饼" src="./images/素菜饼子/红豆高粱饼.png" style="width:100%; height:auto;">
+                        </figure>
+
+                        <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                            <p style="font-size:20px;font-weight:300;line-height:32.5px;">菜煎饼,把它最美好的回忆都留给了我,让我度过了无忧无虑的岁月,这是怎样的一种幸福啊! 走出了故乡,但是走不出记忆中那深入骨髓的菜煎饼。</p>
+                        </div>
+
+                        <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                            <a class=" " target="_blank" href="./html/vegan/2024/03/20240305素食生活-素菜饼子.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                                阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                                </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </footer>
+                    </article>
+                    <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height 24px;background-color: #fff;margin-top:15px;">
+                        <header>
+                            <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                                <a target="_blank" href="./html/vegan/2024/03/20240305素食生活-素丸子.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">素丸子</a>
+                            </h2>
+                        </header>
+
+                        <time datetime="2024-03-05" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                            2024.03.05
+                        </time>
+                        <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+                            <img class=" " alt="丑玉丸子" src="./images/素丸子/丑玉丸子.png" style="width:100%; height:auto;">
+                        </figure>
+
+                        <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                            <p style="font-size:20px;font-weight:300;line-height:32.5px;"> 这道充满回忆的素萝卜丸子，让我满心欢喜。满满的回忆，吃的不是丸子，是回忆。小的时候家里条件不好，没什么好吃的，那会吃道这个素菜，都是幸福了，那会不是素菜都算荤菜了。</p>
+
+                        </div>
+
+                        <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                            <a class=" " target="_blank" href="./html/vegan/2024/03/20240305素食生活-素丸子.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                                阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                                </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </footer>
+                    </article>
+                    <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height 24px;background-color: #fff;margin-top:15px;">
+                        <header>
+                            <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                                <a target="_blank" href="./html/vegan/2024/03/20240305素食生活-素粥.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">素粥</a>
+                            </h2>
+                        </header>
+
+                        <time datetime="2024-03-05" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                            2024.03.05
+                        </time>
+                        <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+                            <img class=" " alt="素粥" src="./images/素粥/红小扁豆煨芋头.png" style="width:100%; height:auto;">
+                        </figure>
+
+                        <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                            <p style="font-size:20px;font-weight:300;line-height:32.5px;">蔬菜粥的功效有润肠通便、增强抵抗力、补充营养等功效，蔬菜粥中维生素c的含量非常高，能够增强人体免疫力，适当的吃一些蔬菜粥，还能够增强人体对于病毒感冒的抵抗力，预防疾病等。</p>
+                        </div>
+
+                        <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                            <a class=" " target="_blank" href="./html/vegan/2024/03/20240305素食生活-素粥.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                                阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                                </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                            </a>
+                        </footer>
+                    </article>      
+
+					
+
+
+
+                <!--<footer class="" style="overflow:hidden;margin-left:auto;margin-right:auto;padding-left:48px; padding-right:0px; margin-top:15px;background-color:#fff;">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="#" >Prev</a></li> 
+                        <li ><a href="# ">1</a></li>
+                        <li><a href="# ">2</a></li>
+                         <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">3</a></li>
+                        <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">4</a></li>
+                        <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">5</a></li>
+                        <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">Next</a></li> 
+                    </ul>
+                </footer>-->
+            </div>
+            <div id="articles" class="tab-pane fade" style="background-color: #f4f4f4;">
+                <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                    <header>
+                        <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                            <a target="_blank" href="./html/articles/2024/03/20240305文章-web安全浅谈.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">web安全浅谈</a>
+                        </h2>
+                    </header>
+
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                    <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+                        <img class="" alt="web安全" src="./images/web安全浅谈/web安全-1.PNG" style="width:100%; height:auto;">
+                    </figure>
+                    <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">web安全主要在layer7，重点在web应用和web容器。web安全很多是由游览器向服务器发送非法请求造成的。web安全涉及很广，包括应用软件漏洞，网络设备安全漏洞，操作系统漏洞等。</p>
+
+                    </div>
+                    <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                        <a class="" target="_blank" href="./html/vegan/2024/03/20240305素食生活-二十种豆腐菜.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                            阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                            </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                        </a>
+                    </footer>
+                </article>
+                <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                    <header>
+                        <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                            <a target="_blank" href="./html/articles/2024/03/20240305文章-双机热备网络配置.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">双机热备网络配置</a>
+                        </h2>
+                    </header>
+
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                    <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+                        <img class=" " alt="双机热备网络配置" src="./images/双机热备网络/双机热备网络配置.png" style="width:100%; height:auto;">
+                    </figure>
+
+                    <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">豆腐是一种营养丰富又历史悠久的食材，豆腐内含人体必需的多种微量元素，还含有丰富的优质蛋白，素有“植物肉”之美称。豆腐已成为中国饮食文化不可或缺的一部分</p>
+
+                    </div>
+
+                    <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                        <a class=" " target="_blank" href="./html/articles/2024/03/20240305文章-双机热备网络配置.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                            阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                            </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                        </a>
+                    </footer>
+                </article>
+                <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                    <header>
+                        <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                            <a target="_blank" href="./html/articles/2024/03/20240305文章-mysql多实例安装及主从复制.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">mysql多实例安装及主从复制</a>
+                        </h2>
+                    </header>
+
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                    <figure style="display:block;border:solid 1px rgb(229, 229, 229); border-radius:4px;margin:16px 0px 8px 0px; padding:12xp;">
+                        <img class=" " alt="mysql多实例安装及主从复制" src="./images/mysql多实例安装及主从复制/mysql主从复制.jpg" style="width:100%; height:auto;">
+                    </figure>
+
+                    <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">花溪十里河滩湿地公园位于贵阳市花溪区花溪大道旁，是集旅游、观光、休闲于一体的多类型湿地公园。公园里有小桥流水、嫩柳垂枝、农田屋舍，也有桃花、樱花、杏花、油菜花等十几种花朵，可谓是鸟语花香、世外桃源之地。</p>
+
+                    </div>
+
+                    <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                        <a class=" " target="_blank" href="./html/articles/2024/03/20240305文章-mysql多实例安装及主从复制.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                            阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                            </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                        </a>
+                    </footer>
+                </article>
+               
+                <!--<footer class="" style="overflow:hidden;margin-left:auto;margin-right:auto;padding-left:48px; padding-right:0px; margin-top:15px;background-color:#fff;">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="#" >Prev</a></li> 
+                        <li ><a href="# ">1</a></li>
+                        <li><a href="# ">2</a></li>
+                         <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">3</a></li>
+                        <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">4</a></li>
+                        <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">5</a></li>
+                        <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">Next</a></li> 
+                    </ul>
+                </footer>-->
+            </div>
+            <div id="course" class="tab-pane fade" style="background-color: #f4f4f4;">
+                <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                    <header>
+                        <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                            <a target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-4.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">CSS学习记录-4</a>
+                        </h2>
+                    </header>
+
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+
+                    <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(1)顶线、中线、基线、底线、x-height、ex、内联盒模型、行距（行间距）的概念</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(2)基线就是小写x字母的下边缘(线)，基线（baseline）不是汉字文字的下底部，而是英文小写字母“x”的下底部! 行内元素默认是按照基线对齐</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(3)line-height属性设置的行高也就是定义的两行文字基线之间的距离</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(4)css中有一个概念叫x-height,意思也就是小写字母x的高度!一个 ex 是一个字体的 x-height</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(5)顶线就是在中文汉字的顶部位置就是顶线的位置! 底线就是在中文汉字的底部位置</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(6)小写x字母的中间交叉点那个位置就是middle的位置! 而中线就是横过小写英文字母x的中间的水平线</p>
+                    </div>
+
+                    <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                        <a class="" target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-4.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                            阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                            </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                        </a>
+                    </footer>
+                </article>
+                <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                    <header>
+                        <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                            <a target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-3.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">CSS学习记录-3</a>
+                        </h2>
+                    </header>
+
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+
+                    <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(1)选择器特殊性值表达为4部分，如:0,0,0,0，一个选择器的具体特殊性由(2)~(7)确定</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(2)对于选择器中给定的各个ID属性值，加0,1,0,0</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(3)对于选择器中给定的各个类属性值，属性选择或伪类，加0,0,1,0</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(4)对于选择器中给定的各个元素和伪元素，加0,0,0,1</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(5)结合符和通配选择器对特殊性没有任何贡献。通配选择器特殊性0,0,0,0，结合符没特殊性，连0特殊性都没有</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(6)每个内联声明的特殊性都是1,0,0,0</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(7)重要性声明在每个声明的分号之前加“!important”，重要性声明和非重要性声明都是分组的，其特殊性都是在各自分组内解决。重要性声明和非重要性声明冲突时，总是重要性声明胜出</p>
+                    </div>
+
+                    <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                        <a class="" target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-3.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                            阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                            </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                        </a>
+                    </footer>
+                </article>
+                <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                    <header>
+                        <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                            <a target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-2.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">CSS学习记录-2</a>
+                        </h2>
+                    </header>
+
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+
+                    <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(1)HTML文档中的元素，如html元素，html {color: black;}</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(2)冒号和分号后面可以有0个或多个空格。选择器与声明块之间有无空格均可。有一个或多个空格均可</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(3)CSS关键字一般由空格分隔，在CSS的font属性中，有一种情况可以使用斜线(/)来分隔两个特定关键字：h2 {font: large/150% sans-serif;}。
+                        <p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(4)选择器分组：h2,p {color: gray;}</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(5)通配选择器：*{color: red;}</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(6)声明分组：h1 {font: 18px Helvetica; color:purple; background:aqua;}</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(7)结合选择器和声明的分组：h1,h2,h3 { color:gray; background:white; padding:0.5em; border:1px solid black; font-family: Charcoal, sans-serif;}</p>
+                    </div>
+
+                    <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                        <a class="" target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-2.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                            阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                            </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                        </a>
+                    </footer>
+                </article>
+                <article class="post" style="padding-bottom:16px;padding-left:48px;padding-right:48px;padding-top:16px;font-family:ui-sans-serif, system-ui, san;line-height:24px;background-color: #fff;margin-top:15px;">
+                    <header>
+                        <h2 style="line-height:45px;margin-block-end:16px;margin-block-start:16px;margin-bottom:16px;margin-top:16px;">
+                            <a target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-1.html" style="font-weight:400;color:rgb(244, 63, 94);font-size:30px;">CSS学习记录-1</a>
+                        </h2>
+                    </header>
+
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+
+                    <div class="content" data-controller="" style="font-family:ui-sans-serif, system-ui, san;line-height:24px;">
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(1)匿名文本：所有未包含在行内元素中的字符串，此匿名文本处在一个匿名行级盒子里</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(2)em框：字符框，在CSS中，font-size的值确定了各个em框的高度，即如果一个元素的font-size:14px, 那么对于该元素，1em=14px。例如h1字体大小为24px,h2大小为18px,那么： h1,h2 {margin-left:1em;}, 那么h1和h2元素的左外边距分别为24px和18px</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(3)em和ex单位：
+                        <p>
+                            <code>
+                                h1 {font-size:24px;}
+                                h2 {font-size:18px;}
+                                p {font-size:12px;}
+                                h1,h2,p {margin-left:1em;}
+                                small {font-size:0.8em;}
+                                &lt;h1&gt;Left margin = &lt;small&gt;24 pixels&lt;/small&gt;&lt;/h1&gt;
+                                &lt;h2&gt;Left margin = &lt;small&gt;18 pixels&lt;/small&gt;&lt;/h2&gt;
+                                &lt;p&gt;Left margin = &lt;small&gt;12 pixels&lt;/small&gt;&lt;/p&gt;
+                            </code>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(4)元素可按2种方式分类，一种分法是块元素和行内元素（也译作“内联”元素，块和行内元素可通过display属性来改变），典型的块级元素有：&lt;div&gt;、&lt;p&gt;、&lt;ul&gt;、&lt;li&gt;、&lt;h1&gt;到&lt;h6&gt;，行内元素包括span（提供了一种将文本的一部分或者文档的一部分独立出来的方式，它定义HTML文档中的一个行内间隔,SPAN 的前后不换行的,它没有结构的意义,纯粹是应用样式）/em（强调文本）/img/a/strong（加粗）/input/b/i/sub/sup/，其中img/input是替换元素。另一种分法是替换元素和非替换元素（替换元素显示外来内容，比如img元素的内容由一张图片来替换，而非替换元素显示页面上存在的内容。），其中替换元素包括：&lt;img&gt;、&lt;input&gt;、&lt;textarea&gt;、&lt;select&gt;和&lt;object&gt;。div、p、span、ul、li等都是非可替换元素</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(5)内容区：所有元素都有内容区，所有元素都有盒子模型。在非替换元素中，内容区是元素中各字符的em框串在一起构成的框(这句是书上的话，我认为只是行内非替换元素）。在替换元素中，内容区就是元素固有的高度加上可能的外边距、内边距和边框</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(6)行间距：font-size值和line-height值之差(line-height减去font-size)，行间距只应用于非替换元素，行间距一般是上下均分的。line-height属性指文本行基线之间的距离</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(7)行内框：（我理解是行内框中只包括行内元素，不包括块元素（display:inline-block例外），因为是“行内”的框）对非替换元素而言，元素行内框的高度等于line-height的值。对应替换元素，元素行内框的高度等于内容区的高度，因为行间距不应用到替换元素</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(8)行框：包含该行中出现的行内框的最高点和最低点的最小框</p>
+                        <p style="font-size:20px;font-weight:300;line-height:32.5px;">(9)span/em/img/a/strong/input/b/i/sub/sup/是行内元素，display属性包括inline/block/inline-block/list-item，其中inline-block属性为：不自动换行/能够识别宽高/默认排列方式为从左到右</p>
+                    </div>
+
+                    <footer class="" style="display:block; line-height:24px;margin:16px 0 16px 0;height:48px;">
+                        <a class="" target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-1.html" style="display:inline-flex;border:solid 1px #000;border-radius:2px;box-shadow:rgba(0, 0, 0, 0) 0px 0px 0px 0;background-color:#000; color:#fff;height:48px;line-height:48px;padding: 0 12px 0 16px; font-weight:300; font-size:15px;">
+                            阅读更多 <span class="glyphicon glyphicon-arrow-right" style="line-height:48px; padding-left:10px;"></span>
+                            </svg><!-- <i class="fa-solid fa-arrow-right"></i> Font Awesome fontawesome.com -->
+                        </a>
+                    </footer>
+                </article>
+                
+                <!--<footer class="" style="overflow:hidden;margin-left:auto;margin-right:auto;padding-left:48px; padding-right:0px; margin-top:15px;background-color:#fff;">
+                    <ul class="pagination pagination-lg">
+                        <li><a href="#" >Prev</a></li> 
+                        <li ><a href="# ">1</a></li>
+                        <li><a href="# ">2</a></li>
+                         <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">3</a></li>
+                        <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">4</a></li>
+                        <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">5</a></li>
+                        <li><a href="javascript:void(0);" style="pointer-events:none; cursor:default;">Next</a></li> 
+                    </ul>
+                </footer>-->
+            </div>
+        </div>
+        <aside class="right-side" style="min-width:300px;float:right; right:10px;border: none;background-color:rgb(255,255,255);margin-top:27px;padding:0 15px 0 15px;">
+            <section class="" style="padding-top:16px;">
+                <h3 class=" "><span style="font-family:ui-sans-serif,system-ui,san;font-size:20px; font-weight:400px;">陈熙</span></h3>
+                </section>
+                <section class="" style="background-color:#0000;border:solid 1px #7aa77a3b; border-radius:4px; padding-left:2px; margin-top:10px;line-height:24px;color:rgb(113, 63, 18);font-size:15px;">
+                    陈熙，博士，教授（计算机科学与技术）</br>
+                    硕士研究生导师，九三社员</br>
+                    主持完成国家自然科学基金（地区基金）2项</br>
+                    在IEEE Transaction on Image Processing等刊物发表20多篇论文</br>
+                    授权国家发明专利4项</br>
+                    申请软件著作权20余项</br>
+                    热爱素食
+                </section>
+                <!-- <i class="fa-solid fa-hand-peace"></i> Font Awesome fontawesome.com -->
+
+                <img alt="avatar" class="" src="images/avatar2.png" style="margin-top:10px; padding:10px;border-radius:4px; border:solid 1px rgb(229, 231, 235);box-shadow:rgba(0, 0, 0, 0) 0px 0px 0p; width:275px;height:275px;max-height:100%;">
+
+                <section class="" style="line-height:24px;height:48px;margin-top:15px;">
+                    <h4 class="" style="font-size:16px;font-weight:600;">联系</h4>
+                    <address class="" style="line-height:24px;height:48px;margin-top:5px;font-size:16px;">
+                        <ul>
+                            <li>201610001(at)gznu.edu.cn</li>
+                        </ul>
+                    </address>
+                </section>
+            
+               <div class="line" style="line-height:16px;margin:16px auto;height:16px;font-size:16px;text-align:center;">最新文章</div>
+				<ul class="latest-articles" style="padding:0 12px 16px 12px;font-family:ui-sans-serif, system-ui, san;line-height:35px;">
+                <li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/vegan/2024/03/20240305素食生活-回春水.html">回春水</a>
+                    <time datetime="2024-03-05" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.03.05
+                    </time>
+                </li>
+				<li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/vegan/2024/03/20240305素食生活-菜饼子.html">菜饼子</a>
+                    <time datetime="2024-03-05" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.03.05
+                    </time>
+                </li>
+				<li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/vegan/2024/03/20240305素食生活-素粥.html">素粥</a>
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.03.05
+                    </time>
+                </li>
+				<li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/vegan/2024/03/20240305素食生活-法式素菜.html">法式素菜</a>
+                    <time datetime="2024.03.05" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.03.05
+                    </time>
+                </li>
+				<li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/vegan/2024/03/20240305素食生活-素丸子.html">素丸子</a>
+                    <time datetime="2024.03.05" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.03.05
+                    </time>
+                </li>
+                <li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/vegan/2024/03/20240305-花溪十里河滩-麦翁桥附近.html">花溪十里河滩,麦翁桥附近</a>
+                    <time datetime="2024.03.05" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                </li>
+                <li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/vegan/2024/03/20240305素食生活-二十种豆腐菜.html">二十种豆腐菜</a>
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                </li>
+                <li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/articles/2024/03/20240305文章-web安全浅谈.html">web安全浅谈</a>
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                </li>
+                <li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/articles/2024/03/20240305文章-双机热备网络配置.html">双机热备网络配置</a>
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                </li>
+                <li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/articles/2024/03/20240305文章-mysql多实例安装及主从复制.html">mysql多实例安装及主从复制</a>
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                </li>
+                <li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-4.html">CSS学习记录-4</a>
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                </li>
+                <li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-3.html">CSS学习记录-3</a>
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                </li>
+                <li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-2.html">CSS学习记录-2</a>
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                </li>
+                <li class="" style="display:list-item;text-align:left;font-size:16px;margin-right:0;">
+                    <a class="" target="_blank" href="./html/sources/2024/03/20240305课程讲座-CSS学习记录-1.html">CSS学习记录-1</a>
+                    <time datetime="2024-02-29" class="" style="color:rgb(115, 115, 115);font-size:15px;line-height:24px;">
+                        2024.02.29
+                    </time>
+                </li>
+				 </ul>
+			   </div>
+        </aside>
+    </section>
+
+    <footer class="container" style="margin:16px 0 16px 0;margin-left:auto; margin-right:auto;">
+        <div class="" style="line-height:48px;height:48px; font-family:ui-sans-serif, system-ui, san;width:100%;font-size:15px;">
+            <p style="text-align: center;"> 20024/03  陈熙，制作/修改</p>
+        </div>
+    </footer>
+
+    <div id="flash-message">
+
+    </div>
+
+    <!--<script async="async" src="./images/script.js" data-website-id="9915f3fe-4850-4bfe-89dd-9776f6f14206"></script>-->
+    <script type="text/javascript" src="./js/jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
