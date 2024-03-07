@@ -1,0 +1,826 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* -----------美素网-----------------------
+default.css
+通行证样式
+default.css file for MS
+Copyright Guiyang YaoCheng Tec. Co.,Ltd.
+http://www.ms.com.cn/
+date:2023.5.18
+Created & Modified by xc.
+----------------------------------------------*/
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+select,
+textarea,
+p,
+blockquote,
+th,
+td {
+    vertical-align: top;
+	/*应用于行内元素和表单元素或display:inline-block的元素*/
+	/*行内块元素会作为替换元素放在行中，行内块元素的底端默认位于文本行的基线上，且内部没有行分隔符*/
+	/*将元素行内框的顶端与包含该元素的行框的顶端对齐*/
+}
+
+* {
+    box-sizing: content-box;
+    /*表明元素的总高度和宽度包含内边距和边框*/
+    /* 取消bootrap的全局设置box-sizing:border-box */
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    width: 100%;
+    height: 1%;
+    min-height: 100vh;
+    /* background-image: linear-gradient(to bottom,#f2f9f2, #ffffff);*/
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+}
+
+abbr,
+acronym {
+    border: 0;
+}
+
+body,
+th,
+td,
+button,
+input,
+select,
+textarea {
+    font-family: "Microsoft Yahei", "Hiragino Sans GB", "Helvetica Neue", Helvetica, tahoma, arial, Verdana, sans-serif, "WenQuanYi Micro Hei", "\5B8B\4F53";
+    font-size: 12px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+}
+
+optgroup,
+option {
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+h2 {
+    font-size: 14px;
+    color: #D51007;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: bold;
+}
+
+label,
+.placeholder,
+.input_text,
+.textarea {
+    font-size: 12px;
+}
+
+input,
+button,
+textarea,
+select {
+    *font-size: 100%;
+    outline: none;
+}
+
+* {
+    word-wrap: break-word;
+}
+
+ul,
+ol,
+dl {
+    list-style-type: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: #0187c5; /*#a3a3a3*/
+    text-decoration: none;
+}
+
+a:hover {
+    color: red; /*#3789ee*/
+}
+
+a:-webkit-any-link {
+    color: -webkit-link;
+    /* 设置webkit内核游览器的默认超链接颜色 */
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.ie6:hover {
+    zoom: 1;
+}
+
+a:focus {
+    outline: none;
+}
+
+a:hover,
+a:active {
+    outline: 0;
+}
+
+a.hidefocus {
+    outline: none;
+}
+
+input[type=text],
+input[type=password],
+textarea {
+    border: 1px solid #bbb;
+    padding: 3px;
+}
+
+input[type=text],
+input[type=password],
+textarea {
+    font-size: 12px;
+    background: #fff;
+    color: #555;
+}
+
+input,
+select {
+    vertical-align: baseline;
+}
+
+/*默认表单状态*/
+.input_text,
+.textarea {
+    border: solid 1px #c4c3c3;
+    border-top-color: rgb(196, 195, 195);
+    border-right-color: rgb(196, 195, 195);
+    border-bottom-color: rgb(196, 195, 195);
+    border-left-color: rgb(196, 195, 195);
+    background-color: #f9f9f9;
+    color: #555;
+    padding: 11px 18px;
+    -webkit-box-shadow: inset 0 2px 2px #e8e7e7;
+    -moz-box-shadow: inset 0 2px 2px #e8e7e7;
+    box-shadow: inset 0 2px 2px #e8e7e7;
+    -webkit-transition: all 0.2s linear 0s;
+    -moz-transition: all 0.2s linear 0s;
+    -o-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+}
+
+/*得到焦点后*/
+.input_text.focus,
+.textarea.focus {
+    background-color: #fff;
+    border-color: #ffd100;
+    /*边框颜色*/
+    /*内阴影*/
+    -webkit-box-shadow: 0 2px 5px #ededed;
+    -moz-box-shadow: 0 2px 5px #ededed;
+    box-shadow: 0 2px 5px #ededed;
+}
+
+/*设置placeholder颜色*/
+::-webkit-input-placeholder {
+    color: #666666;
+}
+
+/* WebKit browsers */
+:-moz-placeholder {
+    color: #666666;
+}
+
+/* Mozilla Firefox 4 to 18 */
+::-moz-placeholder {
+    color: #666666;
+}
+
+/* Mozilla Firefox 19+ */
+:-ms-input-placeholder {
+    color: #666666;
+}
+
+/* Internet Explorer 10+ */
+
+.radius {
+    -khtml-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+input,
+button {
+    overflow: visible;
+    vertical-align: middle;
+}
+
+input,
+button,
+textarea,
+select {
+    *font-size: 100%;
+    line-height: 1.2;
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+/*无轮廓*/
+area {
+    outline: none;
+    blr: expression(this.onFocus=this.blur())
+}
+
+sub,
+sup {
+    vertical-align: baseline;
+	/*元素的基线(如果是替换元素，则是其底端)相对于父元素的基线降低(sub)或升高(sup)*/
+}
+
+/*img*/
+img {
+    border: 0;
+    vertical-align: middle;
+    -ms-interpolation-mode: bicubic;
+}
+
+a img,
+img {
+    -ms-interpolation-mode: bicubic;
+}
+
+/*IE下a:hover 背景闪烁*/
+html {
+    zoom:expression(function(ele) {
+            ele.style.zoom="1"; document.execCommand("BackgroundImageCache", false, true);
+        }
+
+        (this))
+}
+
+/*HTML5 reset*/
+header,
+footer,
+section,
+aside,
+details,
+menu,
+article,
+section,
+nav,
+address,
+hgroup,
+figure,
+figcaption,
+legend {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+
+audio:not([controls]) { /*没有controls属性的audio标签*/
+    display: none;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+	/* :root选择器用于匹配文档的根元素*/
+}
+
+/*
+	Name:			style_clearfix
+	Example:		class="clearfix|cl"
+	Explain:		Clearfix（简写cl）避免因子元素浮动而导致的父元素高度缺失能问题
+*/
+.cl:after,
+#content:after
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+	/*设置了clear:both的元素会把前边元素中设置了浮动属性的元素，当做没设置浮动一样对待，以此来清除对自己的影响*/
+    visibility: hidden;
+}
+
+.cl,
+#content,
+.clearfix {
+    zoom: 1;
+	/* 让元素具有布局特性，可以设置width和height*/
+}
+
+.hide {
+    display: none;
+}
+
+.hide.active {
+    display: inherit;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.right {
+    text-align: right;
+}
+
+.fLeft {
+    float: left;
+}
+
+.fRight {
+    float: right;
+}
+
+/*字体字号*/
+.f12 {
+    font-size: 12px;
+}
+
+.f14 {
+    font-size: 14px;
+}
+
+.f16 {
+    font-size: 16px;
+}
+
+.f18 {
+    font-size: 18px;
+}
+
+.f20 {
+    font-size: 20px;
+}
+
+.f22 {
+    font-size: 22px;
+}
+
+.f24 {
+    font-size: 24px;
+}
+
+.f26 {
+    font-size: 26px;
+}
+
+.f30 {
+    font-size: 30px;
+}
+
+.f36 {
+    font-size: 36px;
+}
+
+.l16 {
+    line-height: 16px;
+}
+
+.l18 {
+    line-height: 18px;
+}
+
+.l20 {
+    line-height: 20px;
+}
+
+.l22 {
+    line-height: 22px;
+}
+
+.l24 {
+    line-height: 24px;
+}
+
+.l26 {
+    line-height: 26px;
+}
+
+.l28 {
+    line-height: 28px;
+}
+
+.l30 {
+    line-height: 30px;
+}
+
+/*边距填充*/
+.p5 {
+    padding: 5px;
+}
+
+.p10 {
+    padding: 10px;
+}
+
+.p15 {
+    padding: 15px;
+}
+
+.p20 {
+    padding: 20px;
+}
+
+.pt5 {
+    padding-top: 5px;
+}
+
+.pt10 {
+    padding-top: 10px;
+}
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.pt20 {
+    padding-top: 20px;
+}
+
+.pt30 {
+    padding-top: 30px;
+}
+
+.pr5 {
+    padding-right: 5px;
+}
+
+.pr10 {
+    padding-right: 10px;
+}
+
+.pr15 {
+    padding-right: 15px;
+}
+
+.pr20 {
+    padding-right: 20px;
+}
+
+.pr30 {
+    padding-right: 30px;
+}
+
+.pb5 {
+    padding-bottom: 5px;
+}
+
+.pb10 {
+    padding-bottom: 10px;
+}
+
+.pb15 {
+    padding-bottom: 15px;
+}
+
+.pb20 {
+    padding-bottom: 20px;
+}
+
+.pb30 {
+    padding-bottom: 30px;
+}
+
+.pl5 {
+    padding-left: 5px;
+}
+
+.pl10 {
+    padding-left: 10px;
+}
+
+.pl15 {
+    padding-left: 15px;
+}
+
+.pl20 {
+    padding-left: 20px;
+}
+
+.pl30 {
+    padding-left: 30px;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt15 {
+    margin-top: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mt30 {
+    margin-top: 30px;
+}
+
+.mt40 {
+    margin-top: 40px;
+}
+
+.mr5 {
+    margin-right: 5px;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mr15 {
+    margin-right: 15px;
+}
+
+.mr20 {
+    margin-right: 20px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb15 {
+    margin-bottom: 15px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb30 {
+    margin-bottom: 30px;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.ml15 {
+    margin-left: 15px;
+}
+
+.ml20 {
+    margin-left: 20px;
+}
+
+.ml30 {
+    margin-left: 30px;
+}
+
+.ml50 {
+    margin-left: 50px;
+}
+
+/*css3圆角*/
+.radius {
+    -khtml-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+/*css3阴影*/
+.box_shadow {
+    background-color: #fff;
+    border: solid 1px #ddd\9;
+    box-shadow: 1px 1px 2px 2px #ddd;
+    -webkit-box-shadow: 1px 1px 2px 2px #ddd;
+    -moz-box-shadow: 1px 1px 2px 2px #ddd;
+}
+
+/*
+	Explain: btn-primary：主要/btn-info：信息/btn-success：成功/btn-warning：警告/btn-danger：危险/btn-inverse：反向/btn-link：链接
+
+*/
+.btn,
+a.btn {
+    padding: 3px 10px;
+    cursor: pointer;
+    border: 0 none;
+    outline: none;
+    font-size: 14px;
+    background-color: #eee;
+    text-align: center;
+    border-radius: 4px;
+    *zoom: 1;
+    color: #282828;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active,
+.btn.active,
+.btn.disabled,
+.btn[disabled],
+a.btn:hover,
+a.btn:focus,
+a.btn:active,
+a.btn.active,
+a.btn.disabled,
+a.btn[disabled] {
+    color: #282828;
+    text-decoration: none;
+    background-color: #ddd;
+}
+
+.btn:first-child {
+    *margin-left: 0;
+}
+
+.btn:hover,
+.btn:focus {
+    -webkit-transition: background-position .1s linear;
+    -moz-transition: background-position .1s linear;
+    -o-transition: background-position .1s linear;
+    transition: background-position .1s linear;
+}
+
+.btn.active,
+.btn:active {
+    outline: none;
+}
+
+/*成功*/
+.btn-success,
+a.btn-success {
+    color: #282828;
+    background-color: #ffba00;
+}
+
+.btn-success:hover,
+.btn-success:focus,
+.btn-success:active,
+.btn-success.active,
+.btn-success.disabled,
+.btn-success[disabled],
+a.btn-success:hover,
+a.btn-success:focus,
+a.btn-success:active,
+a.btn-success.active,
+a.btn-success.disabled,
+a.btn-success[disabled] {
+    background-color: #ffa800;
+}
+
+/*块级按钮*/
+/*button原本是行内块元素*/
+.btn-block,
+a.btn-block {
+    -moz-box-sizing:border-box;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+/*按钮尺寸*/
+.btn-large,
+a.btn-large {
+    padding: 12px 20px;
+    font-size: 22px;
+}
+
+.btn-mid {
+    width: 180px;
+    padding: 15px;
+    font-size: 22px;
+}
+
+/*禁用状态*/
+.disabled,
+a.disabled {
+    cursor: default;
+    background-image: none;
+    opacity: .65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
